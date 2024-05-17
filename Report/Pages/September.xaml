@@ -1,0 +1,112 @@
+﻿<Page x:Class="Report.Pages.September"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Report.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="September">
+
+    <Grid>
+
+        <DataGrid x:Name="dg" Margin="0,76,96,267" FontFamily="Bahnschrift" FontSize="11" AutoGenerateColumns="False" SelectionChanged="dg_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Фамилия Имя" Binding="{Binding Name}"/>
+                <DataGridTextColumn Header="01.09" Binding="{Binding Sept1}"/>
+                <DataGridTextColumn Header="02.09" Binding="{Binding Sept2}"/>
+                <DataGridTextColumn Header="03.09" Binding="{Binding Sept3}"/>
+                <DataGridTextColumn Header="04.09" Binding="{Binding Sept4}"/>
+                <DataGridTextColumn Header="05.09" Binding="{Binding Sept5}"/>
+                <DataGridTextColumn Header="06.09" Binding="{Binding Sept6}"/>
+                <DataGridTextColumn Header="07.09" Binding="{Binding Sept7}"/>
+                <DataGridTextColumn Header="08.09" Binding="{Binding Sept8}"/>
+                <DataGridTextColumn Header="09.09" Binding="{Binding Sept9}"/>
+                <DataGridTextColumn Header="10.09" Binding="{Binding Sept10}"/>
+
+                <DataGridTextColumn Header="11.09" Binding="{Binding Sept11}"/>
+                <DataGridTextColumn Header="12.09" Binding="{Binding Sept12}"/>
+                <DataGridTextColumn Header="13.09" Binding="{Binding Sept13}"/>
+                <DataGridTextColumn Header="14.09" Binding="{Binding Sept14}"/>
+                <DataGridTextColumn Header="15.09" Binding="{Binding Sept15}"/>
+                <DataGridTextColumn Header="16.09" Binding="{Binding Sept16}"/>
+                <DataGridTextColumn Header="17.09" Binding="{Binding Sept17}"/>
+                <DataGridTextColumn Header="18.09" Binding="{Binding Sept18}"/>
+                <DataGridTextColumn Header="19.09" Binding="{Binding Sept19}"/>
+                <DataGridTextColumn Header="20.09" Binding="{Binding Sept20}"/>
+
+                <DataGridTextColumn Header="21.09" Binding="{Binding Sept21}"/>
+                <DataGridTextColumn Header="22.09" Binding="{Binding Sept22}"/>
+                <DataGridTextColumn Header="23.09" Binding="{Binding Sept23}"/>
+                <DataGridTextColumn Header="24.09" Binding="{Binding Sept24}"/>
+                <DataGridTextColumn Header="25.09" Binding="{Binding Sept25}"/>
+                <DataGridTextColumn Header="26.09" Binding="{Binding Sept26}"/>
+                <DataGridTextColumn Header="27.09" Binding="{Binding Sept27}"/>
+                <DataGridTextColumn Header="28.09" Binding="{Binding Sept28}"/>
+                <DataGridTextColumn Header="29.09" Binding="{Binding Sept29}"/>
+                <DataGridTextColumn Header="30.09" Binding="{Binding Sept30}"/>
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,42,0,0" TextWrapping="Wrap" Text="Сентябрь" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="24" FontWeight="Bold" Foreground="White"/>
+        <TextBlock x:Name="tbNum" HorizontalAlignment="Left" Margin="135,42,0,0" TextWrapping="Wrap" Text="Сентябрь" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="24" FontWeight="Bold" Foreground="White" Opacity="0"/>
+        <Button x:Name="btSave" Content="Сохранить" Margin="141,10,0,0" FontSize="22" FontFamily="Bahnschrift" IsCancel="True" Click="btSave_Click" Foreground="White" HorizontalAlignment="Left" Width="211" Height="85" VerticalAlignment="Top">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="#462AD8"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#28AEED"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Width="200" Height="30"
+                        CornerRadius="20"
+                        Background="{TemplateBinding Background}">
+                        <ContentPresenter VerticalAlignment="Center"
+                            HorizontalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Grid Opacity="0">
+         <TextBox x:Name="tbName" HorizontalAlignment="Left" Height="19" Margin="436,43,0,0" TextWrapping="Wrap" Text="{Binding SelectedItem.Name, ElementName=dg}" VerticalAlignment="Top" Width="26"/>
+         <TextBox x:Name="tb01" HorizontalAlignment="Left" Height="19" Margin="436,43,0,0" TextWrapping="Wrap" Text="{Binding SelectedItem.Sept1, ElementName=dg}" VerticalAlignment="Top" Width="26"/>
+        <TextBox x:Name="tb02" HorizontalAlignment="Left" Height="19" Margin="436,43,0,0" TextWrapping="Wrap" Text="{Binding SelectedItem.Sept2, ElementName=dg}" VerticalAlignment="Top" Width="26"/>
+        <TextBox x:Name="tb03" HorizontalAlignment="Left" Height="19" Margin="436,43,0,0" TextWrapping="Wrap" Text="{Binding SelectedItem.Sept3, ElementName=dg}" VerticalAlignment="Top" Width="26"/>
+        <TextBox x:Name="tb04" HorizontalAlignment="Left" Height="19" Margin="436,43,0,0" TextWrapping="Wrap" Text="{Binding SelectedItem.Sept4, ElementName=dg}" VerticalAlignment="Top" Width="26"/>
+        <TextBox x:Name="tb05" HorizontalAlignment="Left" Height="19" Margin="436,43,0,0" TextWrapping="Wrap" Text="{Binding SelectedItem.Sept5, ElementName=dg}" VerticalAlignment="Top" Width="26"/>
+        <TextBox x:Name="tb06" HorizontalAlignment="Left" Height="19" Margin="436,43,0,0" TextWrapping="Wrap" Text="{Binding SelectedItem.Sept6, ElementName=dg}" VerticalAlignment="Top" Width="26"/>
+        <TextBox x:Name="tb07" HorizontalAlignment="Left" Height="19" Margin="436,43,0,0" TextWrapping="Wrap" Text="{Binding SelectedItem.Sept7, ElementName=dg}" VerticalAlignment="Top" Width="26"/>
+        <TextBox x:Name="tb08" HorizontalAlignment="Left" Height="19" Margin="436,43,0,0" TextWrapping="Wrap" Text="{Binding SelectedItem.Sept8, ElementName=dg}" VerticalAlignment="Top" Width="26"/>
+        <TextBox x:Name="tb09" HorizontalAlignment="Left" Height="19" Margin="436,43,0,0" TextWrapping="Wrap" Text="{Binding SelectedItem.Sept9, ElementName=dg}" VerticalAlignment="Top" Width="26"/>
+        <TextBox x:Name="tb10" HorizontalAlignment="Left" Height="19" Margin="436,43,0,0" TextWrapping="Wrap" Text="{Binding SelectedItem.Sept10, ElementName=dg}" VerticalAlignment="Top" Width="26"/>
+        <TextBox x:Name="tb11" HorizontalAlignment="Left" Height="19" Margin="436,43,0,0" TextWrapping="Wrap" Text="{Binding SelectedItem.Sept11, ElementName=dg}" VerticalAlignment="Top" Width="26"/>
+        <TextBox x:Name="tb12" HorizontalAlignment="Left" Height="19" Margin="436,43,0,0" TextWrapping="Wrap" Text="{Binding SelectedItem.Sept12, ElementName=dg}" VerticalAlignment="Top" Width="26"/>
+        <TextBox x:Name="tb13" HorizontalAlignment="Left" Height="19" Margin="436,43,0,0" TextWrapping="Wrap" Text="{Binding SelectedItem.Sept13, ElementName=dg}" VerticalAlignment="Top" Width="26"/>
+        <TextBox x:Name="tb14" HorizontalAlignment="Left" Height="19" Margin="436,43,0,0" TextWrapping="Wrap" Text="{Binding SelectedItem.Sept14, ElementName=dg}" VerticalAlignment="Top" Width="26"/>
+        <TextBox x:Name="tb15" HorizontalAlignment="Left" Height="19" Margin="436,43,0,0" TextWrapping="Wrap" Text="{Binding SelectedItem.Sept15, ElementName=dg}" VerticalAlignment="Top" Width="26"/>
+        <TextBox x:Name="tb16" HorizontalAlignment="Left" Height="19" Margin="436,43,0,0" TextWrapping="Wrap" Text="{Binding SelectedItem.Sept16, ElementName=dg}" VerticalAlignment="Top" Width="26"/>
+        <TextBox x:Name="tb17" HorizontalAlignment="Left" Height="19" Margin="436,43,0,0" TextWrapping="Wrap" Text="{Binding SelectedItem.Sept17, ElementName=dg}" VerticalAlignment="Top" Width="26"/>
+        <TextBox x:Name="tb18" HorizontalAlignment="Left" Height="19" Margin="436,43,0,0" TextWrapping="Wrap" Text="{Binding SelectedItem.Sept18, ElementName=dg}" VerticalAlignment="Top" Width="26"/>
+        <TextBox x:Name="tb19" HorizontalAlignment="Left" Height="19" Margin="436,43,0,0" TextWrapping="Wrap" Text="{Binding SelectedItem.Sept19, ElementName=dg}" VerticalAlignment="Top" Width="26"/>
+        <TextBox x:Name="tb20" HorizontalAlignment="Left" Height="19" Margin="436,43,0,0" TextWrapping="Wrap" Text="{Binding SelectedItem.Sept20, ElementName=dg}" VerticalAlignment="Top" Width="26"/>
+        <TextBox x:Name="tb21" HorizontalAlignment="Left" Height="19" Margin="436,43,0,0" TextWrapping="Wrap" Text="{Binding SelectedItem.Sept21, ElementName=dg}" VerticalAlignment="Top" Width="26"/>
+        <TextBox x:Name="tb22" HorizontalAlignment="Left" Height="19" Margin="436,43,0,0" TextWrapping="Wrap" Text="{Binding SelectedItem.Sept22, ElementName=dg}" VerticalAlignment="Top" Width="26"/>
+        <TextBox x:Name="tb23" HorizontalAlignment="Left" Height="19" Margin="436,43,0,0" TextWrapping="Wrap" Text="{Binding SelectedItem.Sept23, ElementName=dg}" VerticalAlignment="Top" Width="26"/>
+        <TextBox x:Name="tb24" HorizontalAlignment="Left" Height="19" Margin="436,43,0,0" TextWrapping="Wrap" Text="{Binding SelectedItem.Sept24, ElementName=dg}" VerticalAlignment="Top" Width="26"/>
+        <TextBox x:Name="tb25" HorizontalAlignment="Left" Height="19" Margin="436,43,0,0" TextWrapping="Wrap" Text="{Binding SelectedItem.Sept25, ElementName=dg}" VerticalAlignment="Top" Width="26"/>
+        <TextBox x:Name="tb26" HorizontalAlignment="Left" Height="19" Margin="436,43,0,0" TextWrapping="Wrap" Text="{Binding SelectedItem.Sept26, ElementName=dg}" VerticalAlignment="Top" Width="26"/>
+        <TextBox x:Name="tb27" HorizontalAlignment="Left" Height="19" Margin="436,43,0,0" TextWrapping="Wrap" Text="{Binding SelectedItem.Sept27, ElementName=dg}" VerticalAlignment="Top" Width="26"/>
+        <TextBox x:Name="tb28" HorizontalAlignment="Left" Height="19" Margin="436,43,0,0" TextWrapping="Wrap" Text="{Binding SelectedItem.Sept28, ElementName=dg}" VerticalAlignment="Top" Width="26"/>
+        <TextBox x:Name="tb29" HorizontalAlignment="Left" Height="19" Margin="436,43,0,0" TextWrapping="Wrap" Text="{Binding SelectedItem.Sept29, ElementName=dg}" VerticalAlignment="Top" Width="26"/>
+        <TextBox x:Name="tb30" HorizontalAlignment="Left" Height="19" Margin="436,43,0,0" TextWrapping="Wrap" Text="{Binding SelectedItem.Sept30, ElementName=dg}" VerticalAlignment="Top" Width="26"/>
+        </Grid>
+
+
+
+    </Grid>
+</Page>

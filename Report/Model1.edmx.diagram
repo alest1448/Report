@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5be8f6ef84b04f2db70385f9723bbca1" Name="Diagram1">
+        <EntityTypeShape EntityType="AttendanceModel.Groups" Width="1.5" PointX="0.75" PointY="35.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AttendanceModel.SemestrOne" Width="1.5" PointX="3" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="AttendanceModel.SemestrTwo" Width="1.5" PointX="3" PointY="33" IsExpanded="true" />
+        <EntityTypeShape EntityType="AttendanceModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AttendanceModel.Users" Width="1.5" PointX="3" PointY="4.125" IsExpanded="true" />
+        <AssociationConnector Association="AttendanceModel.FK_SemestrOne_Groups" ManuallyRouted="false" />
+        <AssociationConnector Association="AttendanceModel.FK_SemestrTwo_Groups" ManuallyRouted="false" />
+        <AssociationConnector Association="AttendanceModel.FK_Users_Groups" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

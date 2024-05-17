@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище AttendanceModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Groups">
+    <Key>
+      <PropertyRef Name="idGroups" />
+    </Key>
+    <Property Name="idGroups" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NameGroup" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Tutor" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SemestrOne">
+    <Key>
+      <PropertyRef Name="idVisit" />
+    </Key>
+    <Property Name="idVisit" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idGroup" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Sept1" Type="int" />
+    <Property Name="Sept2" Type="int" />
+    <Property Name="Sept3" Type="int" />
+    <Property Name="Sept4" Type="int" />
+    <Property Name="Sept5" Type="int" />
+    <Property Name="Sept6" Type="int" />
+    <Property Name="Sept7" Type="int" />
+    <Property Name="Sept8" Type="int" />
+    <Property Name="Sept9" Type="int" />
+    <Property Name="Sept10" Type="int" />
+    <Property Name="Sept11" Type="int" />
+    <Property Name="Sept12" Type="int" />
+    <Property Name="Sept13" Type="int" />
+    <Property Name="Sept14" Type="int" />
+    <Property Name="Sept15" Type="int" />
+    <Property Name="Sept16" Type="int" />
+    <Property Name="Sept17" Type="int" />
+    <Property Name="Sept18" Type="int" />
+    <Property Name="Sept19" Type="int" />
+    <Property Name="Sept20" Type="int" />
+    <Property Name="Sept21" Type="int" />
+    <Property Name="Sept22" Type="int" />
+    <Property Name="Sept23" Type="int" />
+    <Property Name="Sept24" Type="int" />
+    <Property Name="Sept25" Type="int" />
+    <Property Name="Sept26" Type="int" />
+    <Property Name="Sept27" Type="int" />
+    <Property Name="Sept28" Type="int" />
+    <Property Name="Sept29" Type="int" />
+    <Property Name="Sept30" Type="int" />
+    <Property Name="Oct1" Type="int" />
+    <Property Name="Oct2" Type="int" />
+    <Property Name="Oct3" Type="int" />
+    <Property Name="Oct4" Type="int" />
+    <Property Name="Oct5" Type="int" />
+    <Property Name="Oct6" Type="int" />
+    <Property Name="Oct7" Type="int" />
+    <Property Name="Oct8" Type="int" />
+    <Property Name="Oct9" Type="int" />
+    <Property Name="Oct10" Type="int" />
+    <Property Name="Oct11" Type="int" />
+    <Property Name="Oct12" Type="int" />
+    <Property Name="Oct13" Type="int" />
+    <Property Name="Oct14" Type="int" />
+    <Property Name="Oct15" Type="int" />
+    <Property Name="Oct16" Type="int" />
+    <Property Name="Oct17" Type="int" />
+    <Property Name="Oct18" Type="int" />
+    <Property Name="Oct19" Type="int" />
+    <Property Name="Oct20" Type="int" />
+    <Property Name="Oct21" Type="int" />
+    <Property Name="Oct22" Type="int" />
+    <Property Name="Oct23" Type="int" />
+    <Property Name="Oct24" Type="int" />
+    <Property Name="Oct25" Type="int" />
+    <Property Name="Oct26" Type="int" />
+    <Property Name="Oct27" Type="int" />
+    <Property Name="Oct28" Type="int" />
+    <Property Name="Oct29" Type="int" />
+    <Property Name="Oct30" Type="int" />
+    <Property Name="Oct31" Type="int" />
+    <Property Name="Nov1" Type="int" />
+    <Property Name="Nov2" Type="int" />
+    <Property Name="Nov3" Type="int" />
+    <Property Name="Nov4" Type="int" />
+    <Property Name="Nov5" Type="int" />
+    <Property Name="Nov6" Type="int" />
+    <Property Name="Nov7" Type="int" />
+    <Property Name="Nov8" Type="int" />
+    <Property Name="Nov9" Type="int" />
+    <Property Name="Nov10" Type="int" />
+    <Property Name="Nov11" Type="int" />
+    <Property Name="Nov12" Type="int" />
+    <Property Name="Nov13" Type="int" />
+    <Property Name="Nov14" Type="int" />
+    <Property Name="Nov15" Type="int" />
+    <Property Name="Nov16" Type="int" />
+    <Property Name="Nov17" Type="int" />
+    <Property Name="Nov18" Type="int" />
+    <Property Name="Nov19" Type="int" />
+    <Property Name="Nov20" Type="int" />
+    <Property Name="Nov21" Type="int" />
+    <Property Name="Nov22" Type="int" />
+    <Property Name="Nov23" Type="int" />
+    <Property Name="Nov24" Type="int" />
+    <Property Name="Nov25" Type="int" />
+    <Property Name="Nov26" Type="int" />
+    <Property Name="Nov27" Type="int" />
+    <Property Name="Nov28" Type="int" />
+    <Property Name="Nov29" Type="int" />
+    <Property Name="Nov30" Type="int" />
+    <Property Name="Dec1" Type="int" />
+    <Property Name="Dec2" Type="int" />
+    <Property Name="Dec3" Type="int" />
+    <Property Name="Dec4" Type="int" />
+    <Property Name="Dec5" Type="int" />
+    <Property Name="Dec6" Type="int" />
+    <Property Name="Dec7" Type="int" />
+    <Property Name="Dec8" Type="int" />
+    <Property Name="Dec9" Type="int" />
+    <Property Name="Dec10" Type="int" />
+    <Property Name="Dec11" Type="int" />
+    <Property Name="Dec12" Type="int" />
+    <Property Name="Dec13" Type="int" />
+    <Property Name="Dec14" Type="int" />
+    <Property Name="Dec15" Type="int" />
+    <Property Name="Dec16" Type="int" />
+    <Property Name="Dec17" Type="int" />
+    <Property Name="Dec18" Type="int" />
+    <Property Name="Dec19" Type="int" />
+    <Property Name="Dec20" Type="int" />
+    <Property Name="Dec21" Type="int" />
+    <Property Name="Dec22" Type="int" />
+    <Property Name="Dec23" Type="int" />
+    <Property Name="Dec24" Type="int" />
+    <Property Name="Dec25" Type="int" />
+    <Property Name="Dec26" Type="int" />
+    <Property Name="Dec27" Type="int" />
+    <Property Name="Dec28" Type="int" />
+    <Property Name="Dec29" Type="int" />
+    <Property Name="Dec30" Type="int" />
+    <Property Name="Dec31" Type="int" />
+  </EntityType>
+  <EntityType Name="SemestrTwo">
+    <Key>
+      <PropertyRef Name="idVisit" />
+    </Key>
+    <Property Name="idVisit" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idGroup" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Jan1" Type="int" />
+    <Property Name="Jan2" Type="int" />
+    <Property Name="Jan3" Type="int" />
+    <Property Name="Jan4" Type="int" />
+    <Property Name="Jan5" Type="int" />
+    <Property Name="Jan6" Type="int" />
+    <Property Name="Jan7" Type="int" />
+    <Property Name="Jan8" Type="int" />
+    <Property Name="Jan9" Type="int" />
+    <Property Name="Jan10" Type="int" />
+    <Property Name="Jan11" Type="int" />
+    <Property Name="Jan12" Type="int" />
+    <Property Name="Jan13" Type="int" />
+    <Property Name="Jan14" Type="int" />
+    <Property Name="Jan15" Type="int" />
+    <Property Name="Jan16" Type="int" />
+    <Property Name="Jan17" Type="int" />
+    <Property Name="Jan18" Type="int" />
+    <Property Name="Jan19" Type="int" />
+    <Property Name="Jan20" Type="int" />
+    <Property Name="Jan21" Type="int" />
+    <Property Name="Jan22" Type="int" />
+    <Property Name="Jan23" Type="int" />
+    <Property Name="Jan24" Type="int" />
+    <Property Name="Jan25" Type="int" />
+    <Property Name="Jan26" Type="int" />
+    <Property Name="Jan27" Type="int" />
+    <Property Name="Jan28" Type="int" />
+    <Property Name="Jan29" Type="int" />
+    <Property Name="Jan30" Type="int" />
+    <Property Name="Jan31" Type="int" />
+    <Property Name="Feb1" Type="int" />
+    <Property Name="Feb2" Type="int" />
+    <Property Name="Feb3" Type="int" />
+    <Property Name="Feb4" Type="int" />
+    <Property Name="Feb5" Type="int" />
+    <Property Name="Feb6" Type="int" />
+    <Property Name="Feb7" Type="int" />
+    <Property Name="Feb8" Type="int" />
+    <Property Name="Feb9" Type="int" />
+    <Property Name="Feb10" Type="int" />
+    <Property Name="Feb11" Type="int" />
+    <Property Name="Feb12" Type="int" />
+    <Property Name="Feb13" Type="int" />
+    <Property Name="Feb14" Type="int" />
+    <Property Name="Feb15" Type="int" />
+    <Property Name="Feb16" Type="int" />
+    <Property Name="Feb17" Type="int" />
+    <Property Name="Feb18" Type="int" />
+    <Property Name="Feb19" Type="int" />
+    <Property Name="Feb20" Type="int" />
+    <Property Name="Feb22" Type="int" />
+    <Property Name="Feb23" Type="int" />
+    <Property Name="Feb24" Type="int" />
+    <Property Name="Feb25" Type="int" />
+    <Property Name="Feb26" Type="int" />
+    <Property Name="Feb27" Type="int" />
+    <Property Name="Feb28" Type="int" />
+    <Property Name="Feb29" Type="int" />
+    <Property Name="Mar1" Type="nchar" MaxLength="10" />
+    <Property Name="Mar2" Type="nchar" MaxLength="10" />
+    <Property Name="Mar3" Type="nchar" MaxLength="10" />
+    <Property Name="Mar4" Type="nchar" MaxLength="10" />
+    <Property Name="Mar5" Type="nchar" MaxLength="10" />
+    <Property Name="Mar6" Type="nchar" MaxLength="10" />
+    <Property Name="Mar7" Type="nchar" MaxLength="10" />
+    <Property Name="Mar8" Type="nchar" MaxLength="10" />
+    <Property Name="Mar9" Type="nchar" MaxLength="10" />
+    <Property Name="Mar10" Type="nchar" MaxLength="10" />
+    <Property Name="Mar11" Type="nchar" MaxLength="10" />
+    <Property Name="Mar12" Type="nchar" MaxLength="10" />
+    <Property Name="Mar13" Type="nchar" MaxLength="10" />
+    <Property Name="Mar14" Type="nchar" MaxLength="10" />
+    <Property Name="Mar15" Type="nchar" MaxLength="10" />
+    <Property Name="Mar16" Type="nchar" MaxLength="10" />
+    <Property Name="Mar17" Type="nchar" MaxLength="10" />
+    <Property Name="Mar18" Type="nchar" MaxLength="10" />
+    <Property Name="Mar19" Type="nchar" MaxLength="10" />
+    <Property Name="Mar20" Type="nchar" MaxLength="10" />
+    <Property Name="Mar21" Type="nchar" MaxLength="10" />
+    <Property Name="Mar22" Type="nchar" MaxLength="10" />
+    <Property Name="Mar23" Type="nchar" MaxLength="10" />
+    <Property Name="Mar24" Type="nchar" MaxLength="10" />
+    <Property Name="Mar25" Type="nchar" MaxLength="10" />
+    <Property Name="Mar26" Type="nchar" MaxLength="10" />
+    <Property Name="Mar27" Type="nchar" MaxLength="10" />
+    <Property Name="Mar28" Type="nchar" MaxLength="10" />
+    <Property Name="Mar29" Type="nchar" MaxLength="10" />
+    <Property Name="Mar30" Type="nchar" MaxLength="10" />
+    <Property Name="Mar31" Type="nchar" MaxLength="10" />
+    <Property Name="Apr1" Type="nchar" MaxLength="10" />
+    <Property Name="Apr2" Type="nchar" MaxLength="10" />
+    <Property Name="Apr3" Type="nchar" MaxLength="10" />
+    <Property Name="Apr4" Type="nchar" MaxLength="10" />
+    <Property Name="Apr5" Type="nchar" MaxLength="10" />
+    <Property Name="Apr6" Type="nchar" MaxLength="10" />
+    <Property Name="Apr7" Type="nchar" MaxLength="10" />
+    <Property Name="Apr8" Type="nchar" MaxLength="10" />
+    <Property Name="Apr9" Type="nchar" MaxLength="10" />
+    <Property Name="Apr10" Type="nchar" MaxLength="10" />
+    <Property Name="Apr11" Type="nchar" MaxLength="10" />
+    <Property Name="Apr12" Type="nchar" MaxLength="10" />
+    <Property Name="Apr13" Type="nchar" MaxLength="10" />
+    <Property Name="Apr14" Type="nchar" MaxLength="10" />
+    <Property Name="Apr15" Type="nchar" MaxLength="10" />
+    <Property Name="Apr16" Type="nchar" MaxLength="10" />
+    <Property Name="Apr17" Type="nchar" MaxLength="10" />
+    <Property Name="Apr18" Type="nchar" MaxLength="10" />
+    <Property Name="Apr19" Type="nchar" MaxLength="10" />
+    <Property Name="Apr20" Type="nchar" MaxLength="10" />
+    <Property Name="Apr21" Type="nchar" MaxLength="10" />
+    <Property Name="Apr22" Type="nchar" MaxLength="10" />
+    <Property Name="Apr23" Type="nchar" MaxLength="10" />
+    <Property Name="Apr24" Type="nchar" MaxLength="10" />
+    <Property Name="Apr25" Type="nchar" MaxLength="10" />
+    <Property Name="Apr26" Type="nchar" MaxLength="10" />
+    <Property Name="Apr27" Type="nchar" MaxLength="10" />
+    <Property Name="Apr28" Type="nchar" MaxLength="10" />
+    <Property Name="Apr29" Type="nchar" MaxLength="10" />
+    <Property Name="Apr30" Type="nchar" MaxLength="10" />
+    <Property Name="May1" Type="nchar" MaxLength="10" />
+    <Property Name="May2" Type="nchar" MaxLength="10" />
+    <Property Name="May3" Type="nchar" MaxLength="10" />
+    <Property Name="May4" Type="nchar" MaxLength="10" />
+    <Property Name="May5" Type="nchar" MaxLength="10" />
+    <Property Name="May6" Type="nchar" MaxLength="10" />
+    <Property Name="May7" Type="nchar" MaxLength="10" />
+    <Property Name="May8" Type="nchar" MaxLength="10" />
+    <Property Name="May9" Type="nchar" MaxLength="10" />
+    <Property Name="May10" Type="nchar" MaxLength="10" />
+    <Property Name="May11" Type="nchar" MaxLength="10" />
+    <Property Name="May12" Type="nchar" MaxLength="10" />
+    <Property Name="May13" Type="nchar" MaxLength="10" />
+    <Property Name="May14" Type="nchar" MaxLength="10" />
+    <Property Name="May15" Type="nchar" MaxLength="10" />
+    <Property Name="May16" Type="nchar" MaxLength="10" />
+    <Property Name="May17" Type="nchar" MaxLength="10" />
+    <Property Name="May18" Type="nchar" MaxLength="10" />
+    <Property Name="May19" Type="nchar" MaxLength="10" />
+    <Property Name="May20" Type="nchar" MaxLength="10" />
+    <Property Name="May21" Type="nchar" MaxLength="10" />
+    <Property Name="May22" Type="nchar" MaxLength="10" />
+    <Property Name="May23" Type="nchar" MaxLength="10" />
+    <Property Name="May24" Type="nchar" MaxLength="10" />
+    <Property Name="May25" Type="nchar" MaxLength="10" />
+    <Property Name="May26" Type="nchar" MaxLength="10" />
+    <Property Name="May27" Type="nchar" MaxLength="10" />
+    <Property Name="May28" Type="nchar" MaxLength="10" />
+    <Property Name="May29" Type="nchar" MaxLength="10" />
+    <Property Name="May30" Type="nchar" MaxLength="10" />
+    <Property Name="May31" Type="nchar" MaxLength="10" />
+    <Property Name="Jun1" Type="nchar" MaxLength="10" />
+    <Property Name="Jun2" Type="nchar" MaxLength="10" />
+    <Property Name="Jun3" Type="nchar" MaxLength="10" />
+    <Property Name="Jun4" Type="nchar" MaxLength="10" />
+    <Property Name="Jun5" Type="nchar" MaxLength="10" />
+    <Property Name="Jun6" Type="nchar" MaxLength="10" />
+    <Property Name="Jun7" Type="nchar" MaxLength="10" />
+    <Property Name="Jun9" Type="nchar" MaxLength="10" />
+    <Property Name="Jun10" Type="nchar" MaxLength="10" />
+    <Property Name="Jun11" Type="nchar" MaxLength="10" />
+    <Property Name="Jun12" Type="nchar" MaxLength="10" />
+    <Property Name="Jun13" Type="nchar" MaxLength="10" />
+    <Property Name="Jun14" Type="nchar" MaxLength="10" />
+    <Property Name="Jun15" Type="nchar" MaxLength="10" />
+    <Property Name="Jun16" Type="nchar" MaxLength="10" />
+    <Property Name="Jun17" Type="nchar" MaxLength="10" />
+    <Property Name="Jun18" Type="nchar" MaxLength="10" />
+    <Property Name="Jun19" Type="nchar" MaxLength="10" />
+    <Property Name="Jun20" Type="nchar" MaxLength="10" />
+    <Property Name="Jun21" Type="nchar" MaxLength="10" />
+    <Property Name="Jun22" Type="nchar" MaxLength="10" />
+    <Property Name="Jun23" Type="nchar" MaxLength="10" />
+    <Property Name="Jun24" Type="nchar" MaxLength="10" />
+    <Property Name="Jun25" Type="nchar" MaxLength="10" />
+    <Property Name="Jun26" Type="nchar" MaxLength="10" />
+    <Property Name="Jun27" Type="nchar" MaxLength="10" />
+    <Property Name="Jun28" Type="nchar" MaxLength="10" />
+    <Property Name="Jun29" Type="nchar" MaxLength="10" />
+    <Property Name="Jun30" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="idUser" />
+    </Key>
+    <Property Name="idUser" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="login" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="password" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="FIO" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="idGroup" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_SemestrOne_Groups">
+    <End Role="Groups" Type="Self.Groups" Multiplicity="1" />
+    <End Role="SemestrOne" Type="Self.SemestrOne" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Groups">
+        <PropertyRef Name="idGroups" />
+      </Principal>
+      <Dependent Role="SemestrOne">
+        <PropertyRef Name="idGroup" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SemestrTwo_Groups">
+    <End Role="Groups" Type="Self.Groups" Multiplicity="1" />
+    <End Role="SemestrTwo" Type="Self.SemestrTwo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Groups">
+        <PropertyRef Name="idGroups" />
+      </Principal>
+      <Dependent Role="SemestrTwo">
+        <PropertyRef Name="idGroup" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_Groups">
+    <End Role="Groups" Type="Self.Groups" Multiplicity="1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Groups">
+        <PropertyRef Name="idGroups" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="idGroup" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="Хранилище AttendanceModelContainer">
+    <EntitySet Name="Groups" EntityType="Self.Groups" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SemestrOne" EntityType="Self.SemestrOne" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SemestrTwo" EntityType="Self.SemestrTwo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_SemestrOne_Groups" Association="Self.FK_SemestrOne_Groups">
+      <End Role="Groups" EntitySet="Groups" />
+      <End Role="SemestrOne" EntitySet="SemestrOne" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SemestrTwo_Groups" Association="Self.FK_SemestrTwo_Groups">
+      <End Role="Groups" EntitySet="Groups" />
+      <End Role="SemestrTwo" EntitySet="SemestrTwo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_Groups" Association="Self.FK_Users_Groups">
+      <End Role="Groups" EntitySet="Groups" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

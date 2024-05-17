@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище AttendanceModelContainer" CdmEntityContainer="AttendanceEntities">
+    <EntitySetMapping Name="Groups">
+      <EntityTypeMapping TypeName="AttendanceModel.Groups">
+        <MappingFragment StoreEntitySet="Groups">
+          <ScalarProperty Name="idGroups" ColumnName="idGroups" />
+          <ScalarProperty Name="NameGroup" ColumnName="NameGroup" />
+          <ScalarProperty Name="Tutor" ColumnName="Tutor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SemestrOne">
+      <EntityTypeMapping TypeName="AttendanceModel.SemestrOne">
+        <MappingFragment StoreEntitySet="SemestrOne">
+          <ScalarProperty Name="idVisit" ColumnName="idVisit" />
+          <ScalarProperty Name="idGroup" ColumnName="idGroup" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Sept1" ColumnName="Sept1" />
+          <ScalarProperty Name="Sept2" ColumnName="Sept2" />
+          <ScalarProperty Name="Sept3" ColumnName="Sept3" />
+          <ScalarProperty Name="Sept4" ColumnName="Sept4" />
+          <ScalarProperty Name="Sept5" ColumnName="Sept5" />
+          <ScalarProperty Name="Sept6" ColumnName="Sept6" />
+          <ScalarProperty Name="Sept7" ColumnName="Sept7" />
+          <ScalarProperty Name="Sept8" ColumnName="Sept8" />
+          <ScalarProperty Name="Sept9" ColumnName="Sept9" />
+          <ScalarProperty Name="Sept10" ColumnName="Sept10" />
+          <ScalarProperty Name="Sept11" ColumnName="Sept11" />
+          <ScalarProperty Name="Sept12" ColumnName="Sept12" />
+          <ScalarProperty Name="Sept13" ColumnName="Sept13" />
+          <ScalarProperty Name="Sept14" ColumnName="Sept14" />
+          <ScalarProperty Name="Sept15" ColumnName="Sept15" />
+          <ScalarProperty Name="Sept16" ColumnName="Sept16" />
+          <ScalarProperty Name="Sept17" ColumnName="Sept17" />
+          <ScalarProperty Name="Sept18" ColumnName="Sept18" />
+          <ScalarProperty Name="Sept19" ColumnName="Sept19" />
+          <ScalarProperty Name="Sept20" ColumnName="Sept20" />
+          <ScalarProperty Name="Sept21" ColumnName="Sept21" />
+          <ScalarProperty Name="Sept22" ColumnName="Sept22" />
+          <ScalarProperty Name="Sept23" ColumnName="Sept23" />
+          <ScalarProperty Name="Sept24" ColumnName="Sept24" />
+          <ScalarProperty Name="Sept25" ColumnName="Sept25" />
+          <ScalarProperty Name="Sept26" ColumnName="Sept26" />
+          <ScalarProperty Name="Sept27" ColumnName="Sept27" />
+          <ScalarProperty Name="Sept28" ColumnName="Sept28" />
+          <ScalarProperty Name="Sept29" ColumnName="Sept29" />
+          <ScalarProperty Name="Sept30" ColumnName="Sept30" />
+          <ScalarProperty Name="Oct1" ColumnName="Oct1" />
+          <ScalarProperty Name="Oct2" ColumnName="Oct2" />
+          <ScalarProperty Name="Oct3" ColumnName="Oct3" />
+          <ScalarProperty Name="Oct4" ColumnName="Oct4" />
+          <ScalarProperty Name="Oct5" ColumnName="Oct5" />
+          <ScalarProperty Name="Oct6" ColumnName="Oct6" />
+          <ScalarProperty Name="Oct7" ColumnName="Oct7" />
+          <ScalarProperty Name="Oct8" ColumnName="Oct8" />
+          <ScalarProperty Name="Oct9" ColumnName="Oct9" />
+          <ScalarProperty Name="Oct10" ColumnName="Oct10" />
+          <ScalarProperty Name="Oct11" ColumnName="Oct11" />
+          <ScalarProperty Name="Oct12" ColumnName="Oct12" />
+          <ScalarProperty Name="Oct13" ColumnName="Oct13" />
+          <ScalarProperty Name="Oct14" ColumnName="Oct14" />
+          <ScalarProperty Name="Oct15" ColumnName="Oct15" />
+          <ScalarProperty Name="Oct16" ColumnName="Oct16" />
+          <ScalarProperty Name="Oct17" ColumnName="Oct17" />
+          <ScalarProperty Name="Oct18" ColumnName="Oct18" />
+          <ScalarProperty Name="Oct19" ColumnName="Oct19" />
+          <ScalarProperty Name="Oct20" ColumnName="Oct20" />
+          <ScalarProperty Name="Oct21" ColumnName="Oct21" />
+          <ScalarProperty Name="Oct22" ColumnName="Oct22" />
+          <ScalarProperty Name="Oct23" ColumnName="Oct23" />
+          <ScalarProperty Name="Oct24" ColumnName="Oct24" />
+          <ScalarProperty Name="Oct25" ColumnName="Oct25" />
+          <ScalarProperty Name="Oct26" ColumnName="Oct26" />
+          <ScalarProperty Name="Oct27" ColumnName="Oct27" />
+          <ScalarProperty Name="Oct28" ColumnName="Oct28" />
+          <ScalarProperty Name="Oct29" ColumnName="Oct29" />
+          <ScalarProperty Name="Oct30" ColumnName="Oct30" />
+          <ScalarProperty Name="Oct31" ColumnName="Oct31" />
+          <ScalarProperty Name="Nov1" ColumnName="Nov1" />
+          <ScalarProperty Name="Nov2" ColumnName="Nov2" />
+          <ScalarProperty Name="Nov3" ColumnName="Nov3" />
+          <ScalarProperty Name="Nov4" ColumnName="Nov4" />
+          <ScalarProperty Name="Nov5" ColumnName="Nov5" />
+          <ScalarProperty Name="Nov6" ColumnName="Nov6" />
+          <ScalarProperty Name="Nov7" ColumnName="Nov7" />
+          <ScalarProperty Name="Nov8" ColumnName="Nov8" />
+          <ScalarProperty Name="Nov9" ColumnName="Nov9" />
+          <ScalarProperty Name="Nov10" ColumnName="Nov10" />
+          <ScalarProperty Name="Nov11" ColumnName="Nov11" />
+          <ScalarProperty Name="Nov12" ColumnName="Nov12" />
+          <ScalarProperty Name="Nov13" ColumnName="Nov13" />
+          <ScalarProperty Name="Nov14" ColumnName="Nov14" />
+          <ScalarProperty Name="Nov15" ColumnName="Nov15" />
+          <ScalarProperty Name="Nov16" ColumnName="Nov16" />
+          <ScalarProperty Name="Nov17" ColumnName="Nov17" />
+          <ScalarProperty Name="Nov18" ColumnName="Nov18" />
+          <ScalarProperty Name="Nov19" ColumnName="Nov19" />
+          <ScalarProperty Name="Nov20" ColumnName="Nov20" />
+          <ScalarProperty Name="Nov21" ColumnName="Nov21" />
+          <ScalarProperty Name="Nov22" ColumnName="Nov22" />
+          <ScalarProperty Name="Nov23" ColumnName="Nov23" />
+          <ScalarProperty Name="Nov24" ColumnName="Nov24" />
+          <ScalarProperty Name="Nov25" ColumnName="Nov25" />
+          <ScalarProperty Name="Nov26" ColumnName="Nov26" />
+          <ScalarProperty Name="Nov27" ColumnName="Nov27" />
+          <ScalarProperty Name="Nov28" ColumnName="Nov28" />
+          <ScalarProperty Name="Nov29" ColumnName="Nov29" />
+          <ScalarProperty Name="Nov30" ColumnName="Nov30" />
+          <ScalarProperty Name="Dec1" ColumnName="Dec1" />
+          <ScalarProperty Name="Dec2" ColumnName="Dec2" />
+          <ScalarProperty Name="Dec3" ColumnName="Dec3" />
+          <ScalarProperty Name="Dec4" ColumnName="Dec4" />
+          <ScalarProperty Name="Dec5" ColumnName="Dec5" />
+          <ScalarProperty Name="Dec6" ColumnName="Dec6" />
+          <ScalarProperty Name="Dec7" ColumnName="Dec7" />
+          <ScalarProperty Name="Dec8" ColumnName="Dec8" />
+          <ScalarProperty Name="Dec9" ColumnName="Dec9" />
+          <ScalarProperty Name="Dec10" ColumnName="Dec10" />
+          <ScalarProperty Name="Dec11" ColumnName="Dec11" />
+          <ScalarProperty Name="Dec12" ColumnName="Dec12" />
+          <ScalarProperty Name="Dec13" ColumnName="Dec13" />
+          <ScalarProperty Name="Dec14" ColumnName="Dec14" />
+          <ScalarProperty Name="Dec15" ColumnName="Dec15" />
+          <ScalarProperty Name="Dec16" ColumnName="Dec16" />
+          <ScalarProperty Name="Dec17" ColumnName="Dec17" />
+          <ScalarProperty Name="Dec18" ColumnName="Dec18" />
+          <ScalarProperty Name="Dec19" ColumnName="Dec19" />
+          <ScalarProperty Name="Dec20" ColumnName="Dec20" />
+          <ScalarProperty Name="Dec21" ColumnName="Dec21" />
+          <ScalarProperty Name="Dec22" ColumnName="Dec22" />
+          <ScalarProperty Name="Dec23" ColumnName="Dec23" />
+          <ScalarProperty Name="Dec24" ColumnName="Dec24" />
+          <ScalarProperty Name="Dec25" ColumnName="Dec25" />
+          <ScalarProperty Name="Dec26" ColumnName="Dec26" />
+          <ScalarProperty Name="Dec27" ColumnName="Dec27" />
+          <ScalarProperty Name="Dec28" ColumnName="Dec28" />
+          <ScalarProperty Name="Dec29" ColumnName="Dec29" />
+          <ScalarProperty Name="Dec30" ColumnName="Dec30" />
+          <ScalarProperty Name="Dec31" ColumnName="Dec31" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SemestrTwo">
+      <EntityTypeMapping TypeName="AttendanceModel.SemestrTwo">
+        <MappingFragment StoreEntitySet="SemestrTwo">
+          <ScalarProperty Name="idVisit" ColumnName="idVisit" />
+          <ScalarProperty Name="idGroup" ColumnName="idGroup" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Jan1" ColumnName="Jan1" />
+          <ScalarProperty Name="Jan2" ColumnName="Jan2" />
+          <ScalarProperty Name="Jan3" ColumnName="Jan3" />
+          <ScalarProperty Name="Jan4" ColumnName="Jan4" />
+          <ScalarProperty Name="Jan5" ColumnName="Jan5" />
+          <ScalarProperty Name="Jan6" ColumnName="Jan6" />
+          <ScalarProperty Name="Jan7" ColumnName="Jan7" />
+          <ScalarProperty Name="Jan8" ColumnName="Jan8" />
+          <ScalarProperty Name="Jan9" ColumnName="Jan9" />
+          <ScalarProperty Name="Jan10" ColumnName="Jan10" />
+          <ScalarProperty Name="Jan11" ColumnName="Jan11" />
+          <ScalarProperty Name="Jan12" ColumnName="Jan12" />
+          <ScalarProperty Name="Jan13" ColumnName="Jan13" />
+          <ScalarProperty Name="Jan14" ColumnName="Jan14" />
+          <ScalarProperty Name="Jan15" ColumnName="Jan15" />
+          <ScalarProperty Name="Jan16" ColumnName="Jan16" />
+          <ScalarProperty Name="Jan17" ColumnName="Jan17" />
+          <ScalarProperty Name="Jan18" ColumnName="Jan18" />
+          <ScalarProperty Name="Jan19" ColumnName="Jan19" />
+          <ScalarProperty Name="Jan20" ColumnName="Jan20" />
+          <ScalarProperty Name="Jan21" ColumnName="Jan21" />
+          <ScalarProperty Name="Jan22" ColumnName="Jan22" />
+          <ScalarProperty Name="Jan23" ColumnName="Jan23" />
+          <ScalarProperty Name="Jan24" ColumnName="Jan24" />
+          <ScalarProperty Name="Jan25" ColumnName="Jan25" />
+          <ScalarProperty Name="Jan26" ColumnName="Jan26" />
+          <ScalarProperty Name="Jan27" ColumnName="Jan27" />
+          <ScalarProperty Name="Jan28" ColumnName="Jan28" />
+          <ScalarProperty Name="Jan29" ColumnName="Jan29" />
+          <ScalarProperty Name="Jan30" ColumnName="Jan30" />
+          <ScalarProperty Name="Jan31" ColumnName="Jan31" />
+          <ScalarProperty Name="Feb1" ColumnName="Feb1" />
+          <ScalarProperty Name="Feb2" ColumnName="Feb2" />
+          <ScalarProperty Name="Feb3" ColumnName="Feb3" />
+          <ScalarProperty Name="Feb4" ColumnName="Feb4" />
+          <ScalarProperty Name="Feb5" ColumnName="Feb5" />
+          <ScalarProperty Name="Feb6" ColumnName="Feb6" />
+          <ScalarProperty Name="Feb7" ColumnName="Feb7" />
+          <ScalarProperty Name="Feb8" ColumnName="Feb8" />
+          <ScalarProperty Name="Feb9" ColumnName="Feb9" />
+          <ScalarProperty Name="Feb10" ColumnName="Feb10" />
+          <ScalarProperty Name="Feb11" ColumnName="Feb11" />
+          <ScalarProperty Name="Feb12" ColumnName="Feb12" />
+          <ScalarProperty Name="Feb13" ColumnName="Feb13" />
+          <ScalarProperty Name="Feb14" ColumnName="Feb14" />
+          <ScalarProperty Name="Feb15" ColumnName="Feb15" />
+          <ScalarProperty Name="Feb16" ColumnName="Feb16" />
+          <ScalarProperty Name="Feb17" ColumnName="Feb17" />
+          <ScalarProperty Name="Feb18" ColumnName="Feb18" />
+          <ScalarProperty Name="Feb19" ColumnName="Feb19" />
+          <ScalarProperty Name="Feb20" ColumnName="Feb20" />
+          <ScalarProperty Name="Feb22" ColumnName="Feb22" />
+          <ScalarProperty Name="Feb23" ColumnName="Feb23" />
+          <ScalarProperty Name="Feb24" ColumnName="Feb24" />
+          <ScalarProperty Name="Feb25" ColumnName="Feb25" />
+          <ScalarProperty Name="Feb26" ColumnName="Feb26" />
+          <ScalarProperty Name="Feb27" ColumnName="Feb27" />
+          <ScalarProperty Name="Feb28" ColumnName="Feb28" />
+          <ScalarProperty Name="Feb29" ColumnName="Feb29" />
+          <ScalarProperty Name="Mar1" ColumnName="Mar1" />
+          <ScalarProperty Name="Mar2" ColumnName="Mar2" />
+          <ScalarProperty Name="Mar3" ColumnName="Mar3" />
+          <ScalarProperty Name="Mar4" ColumnName="Mar4" />
+          <ScalarProperty Name="Mar5" ColumnName="Mar5" />
+          <ScalarProperty Name="Mar6" ColumnName="Mar6" />
+          <ScalarProperty Name="Mar7" ColumnName="Mar7" />
+          <ScalarProperty Name="Mar8" ColumnName="Mar8" />
+          <ScalarProperty Name="Mar9" ColumnName="Mar9" />
+          <ScalarProperty Name="Mar10" ColumnName="Mar10" />
+          <ScalarProperty Name="Mar11" ColumnName="Mar11" />
+          <ScalarProperty Name="Mar12" ColumnName="Mar12" />
+          <ScalarProperty Name="Mar13" ColumnName="Mar13" />
+          <ScalarProperty Name="Mar14" ColumnName="Mar14" />
+          <ScalarProperty Name="Mar15" ColumnName="Mar15" />
+          <ScalarProperty Name="Mar16" ColumnName="Mar16" />
+          <ScalarProperty Name="Mar17" ColumnName="Mar17" />
+          <ScalarProperty Name="Mar18" ColumnName="Mar18" />
+          <ScalarProperty Name="Mar19" ColumnName="Mar19" />
+          <ScalarProperty Name="Mar20" ColumnName="Mar20" />
+          <ScalarProperty Name="Mar21" ColumnName="Mar21" />
+          <ScalarProperty Name="Mar22" ColumnName="Mar22" />
+          <ScalarProperty Name="Mar23" ColumnName="Mar23" />
+          <ScalarProperty Name="Mar24" ColumnName="Mar24" />
+          <ScalarProperty Name="Mar25" ColumnName="Mar25" />
+          <ScalarProperty Name="Mar26" ColumnName="Mar26" />
+          <ScalarProperty Name="Mar27" ColumnName="Mar27" />
+          <ScalarProperty Name="Mar28" ColumnName="Mar28" />
+          <ScalarProperty Name="Mar29" ColumnName="Mar29" />
+          <ScalarProperty Name="Mar30" ColumnName="Mar30" />
+          <ScalarProperty Name="Mar31" ColumnName="Mar31" />
+          <ScalarProperty Name="Apr1" ColumnName="Apr1" />
+          <ScalarProperty Name="Apr2" ColumnName="Apr2" />
+          <ScalarProperty Name="Apr3" ColumnName="Apr3" />
+          <ScalarProperty Name="Apr4" ColumnName="Apr4" />
+          <ScalarProperty Name="Apr5" ColumnName="Apr5" />
+          <ScalarProperty Name="Apr6" ColumnName="Apr6" />
+          <ScalarProperty Name="Apr7" ColumnName="Apr7" />
+          <ScalarProperty Name="Apr8" ColumnName="Apr8" />
+          <ScalarProperty Name="Apr9" ColumnName="Apr9" />
+          <ScalarProperty Name="Apr10" ColumnName="Apr10" />
+          <ScalarProperty Name="Apr11" ColumnName="Apr11" />
+          <ScalarProperty Name="Apr12" ColumnName="Apr12" />
+          <ScalarProperty Name="Apr13" ColumnName="Apr13" />
+          <ScalarProperty Name="Apr14" ColumnName="Apr14" />
+          <ScalarProperty Name="Apr15" ColumnName="Apr15" />
+          <ScalarProperty Name="Apr16" ColumnName="Apr16" />
+          <ScalarProperty Name="Apr17" ColumnName="Apr17" />
+          <ScalarProperty Name="Apr18" ColumnName="Apr18" />
+          <ScalarProperty Name="Apr19" ColumnName="Apr19" />
+          <ScalarProperty Name="Apr20" ColumnName="Apr20" />
+          <ScalarProperty Name="Apr21" ColumnName="Apr21" />
+          <ScalarProperty Name="Apr22" ColumnName="Apr22" />
+          <ScalarProperty Name="Apr23" ColumnName="Apr23" />
+          <ScalarProperty Name="Apr24" ColumnName="Apr24" />
+          <ScalarProperty Name="Apr25" ColumnName="Apr25" />
+          <ScalarProperty Name="Apr26" ColumnName="Apr26" />
+          <ScalarProperty Name="Apr27" ColumnName="Apr27" />
+          <ScalarProperty Name="Apr28" ColumnName="Apr28" />
+          <ScalarProperty Name="Apr29" ColumnName="Apr29" />
+          <ScalarProperty Name="Apr30" ColumnName="Apr30" />
+          <ScalarProperty Name="May1" ColumnName="May1" />
+          <ScalarProperty Name="May2" ColumnName="May2" />
+          <ScalarProperty Name="May3" ColumnName="May3" />
+          <ScalarProperty Name="May4" ColumnName="May4" />
+          <ScalarProperty Name="May5" ColumnName="May5" />
+          <ScalarProperty Name="May6" ColumnName="May6" />
+          <ScalarProperty Name="May7" ColumnName="May7" />
+          <ScalarProperty Name="May8" ColumnName="May8" />
+          <ScalarProperty Name="May9" ColumnName="May9" />
+          <ScalarProperty Name="May10" ColumnName="May10" />
+          <ScalarProperty Name="May11" ColumnName="May11" />
+          <ScalarProperty Name="May12" ColumnName="May12" />
+          <ScalarProperty Name="May13" ColumnName="May13" />
+          <ScalarProperty Name="May14" ColumnName="May14" />
+          <ScalarProperty Name="May15" ColumnName="May15" />
+          <ScalarProperty Name="May16" ColumnName="May16" />
+          <ScalarProperty Name="May17" ColumnName="May17" />
+          <ScalarProperty Name="May18" ColumnName="May18" />
+          <ScalarProperty Name="May19" ColumnName="May19" />
+          <ScalarProperty Name="May20" ColumnName="May20" />
+          <ScalarProperty Name="May21" ColumnName="May21" />
+          <ScalarProperty Name="May22" ColumnName="May22" />
+          <ScalarProperty Name="May23" ColumnName="May23" />
+          <ScalarProperty Name="May24" ColumnName="May24" />
+          <ScalarProperty Name="May25" ColumnName="May25" />
+          <ScalarProperty Name="May26" ColumnName="May26" />
+          <ScalarProperty Name="May27" ColumnName="May27" />
+          <ScalarProperty Name="May28" ColumnName="May28" />
+          <ScalarProperty Name="May29" ColumnName="May29" />
+          <ScalarProperty Name="May30" ColumnName="May30" />
+          <ScalarProperty Name="May31" ColumnName="May31" />
+          <ScalarProperty Name="Jun1" ColumnName="Jun1" />
+          <ScalarProperty Name="Jun2" ColumnName="Jun2" />
+          <ScalarProperty Name="Jun3" ColumnName="Jun3" />
+          <ScalarProperty Name="Jun4" ColumnName="Jun4" />
+          <ScalarProperty Name="Jun5" ColumnName="Jun5" />
+          <ScalarProperty Name="Jun6" ColumnName="Jun6" />
+          <ScalarProperty Name="Jun7" ColumnName="Jun7" />
+          <ScalarProperty Name="Jun9" ColumnName="Jun9" />
+          <ScalarProperty Name="Jun10" ColumnName="Jun10" />
+          <ScalarProperty Name="Jun11" ColumnName="Jun11" />
+          <ScalarProperty Name="Jun12" ColumnName="Jun12" />
+          <ScalarProperty Name="Jun13" ColumnName="Jun13" />
+          <ScalarProperty Name="Jun14" ColumnName="Jun14" />
+          <ScalarProperty Name="Jun15" ColumnName="Jun15" />
+          <ScalarProperty Name="Jun16" ColumnName="Jun16" />
+          <ScalarProperty Name="Jun17" ColumnName="Jun17" />
+          <ScalarProperty Name="Jun18" ColumnName="Jun18" />
+          <ScalarProperty Name="Jun19" ColumnName="Jun19" />
+          <ScalarProperty Name="Jun20" ColumnName="Jun20" />
+          <ScalarProperty Name="Jun21" ColumnName="Jun21" />
+          <ScalarProperty Name="Jun22" ColumnName="Jun22" />
+          <ScalarProperty Name="Jun23" ColumnName="Jun23" />
+          <ScalarProperty Name="Jun24" ColumnName="Jun24" />
+          <ScalarProperty Name="Jun25" ColumnName="Jun25" />
+          <ScalarProperty Name="Jun26" ColumnName="Jun26" />
+          <ScalarProperty Name="Jun27" ColumnName="Jun27" />
+          <ScalarProperty Name="Jun28" ColumnName="Jun28" />
+          <ScalarProperty Name="Jun29" ColumnName="Jun29" />
+          <ScalarProperty Name="Jun30" ColumnName="Jun30" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="AttendanceModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="AttendanceModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="idUser" ColumnName="idUser" />
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="FIO" ColumnName="FIO" />
+          <ScalarProperty Name="idGroup" ColumnName="idGroup" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="Хранилище AttendanceModel.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="Хранилище AttendanceModel.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="Хранилище AttendanceModel.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="Хранилище AttendanceModel.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="AttendanceModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="Хранилище AttendanceModel.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="AttendanceModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="Хранилище AttendanceModel.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="Хранилище AttendanceModel.sp_upgraddiagrams" />
+  </EntityContainerMapping>
+</Mapping>

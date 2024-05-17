@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AttendanceModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Groups">
+    <Key>
+      <PropertyRef Name="idGroups" />
+    </Key>
+    <Property Name="idGroups" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NameGroup" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Tutor" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="SemestrOne" Relationship="Self.FK_SemestrOne_Groups" FromRole="Groups" ToRole="SemestrOne" />
+    <NavigationProperty Name="SemestrTwo" Relationship="Self.FK_SemestrTwo_Groups" FromRole="Groups" ToRole="SemestrTwo" />
+    <NavigationProperty Name="Users" Relationship="Self.FK_Users_Groups" FromRole="Groups" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="SemestrOne">
+    <Key>
+      <PropertyRef Name="idVisit" />
+    </Key>
+    <Property Name="idVisit" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idGroup" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Sept1" Type="Int32" />
+    <Property Name="Sept2" Type="Int32" />
+    <Property Name="Sept3" Type="Int32" />
+    <Property Name="Sept4" Type="Int32" />
+    <Property Name="Sept5" Type="Int32" />
+    <Property Name="Sept6" Type="Int32" />
+    <Property Name="Sept7" Type="Int32" />
+    <Property Name="Sept8" Type="Int32" />
+    <Property Name="Sept9" Type="Int32" />
+    <Property Name="Sept10" Type="Int32" />
+    <Property Name="Sept11" Type="Int32" />
+    <Property Name="Sept12" Type="Int32" />
+    <Property Name="Sept13" Type="Int32" />
+    <Property Name="Sept14" Type="Int32" />
+    <Property Name="Sept15" Type="Int32" />
+    <Property Name="Sept16" Type="Int32" />
+    <Property Name="Sept17" Type="Int32" />
+    <Property Name="Sept18" Type="Int32" />
+    <Property Name="Sept19" Type="Int32" />
+    <Property Name="Sept20" Type="Int32" />
+    <Property Name="Sept21" Type="Int32" />
+    <Property Name="Sept22" Type="Int32" />
+    <Property Name="Sept23" Type="Int32" />
+    <Property Name="Sept24" Type="Int32" />
+    <Property Name="Sept25" Type="Int32" />
+    <Property Name="Sept26" Type="Int32" />
+    <Property Name="Sept27" Type="Int32" />
+    <Property Name="Sept28" Type="Int32" />
+    <Property Name="Sept29" Type="Int32" />
+    <Property Name="Sept30" Type="Int32" />
+    <Property Name="Oct1" Type="Int32" />
+    <Property Name="Oct2" Type="Int32" />
+    <Property Name="Oct3" Type="Int32" />
+    <Property Name="Oct4" Type="Int32" />
+    <Property Name="Oct5" Type="Int32" />
+    <Property Name="Oct6" Type="Int32" />
+    <Property Name="Oct7" Type="Int32" />
+    <Property Name="Oct8" Type="Int32" />
+    <Property Name="Oct9" Type="Int32" />
+    <Property Name="Oct10" Type="Int32" />
+    <Property Name="Oct11" Type="Int32" />
+    <Property Name="Oct12" Type="Int32" />
+    <Property Name="Oct13" Type="Int32" />
+    <Property Name="Oct14" Type="Int32" />
+    <Property Name="Oct15" Type="Int32" />
+    <Property Name="Oct16" Type="Int32" />
+    <Property Name="Oct17" Type="Int32" />
+    <Property Name="Oct18" Type="Int32" />
+    <Property Name="Oct19" Type="Int32" />
+    <Property Name="Oct20" Type="Int32" />
+    <Property Name="Oct21" Type="Int32" />
+    <Property Name="Oct22" Type="Int32" />
+    <Property Name="Oct23" Type="Int32" />
+    <Property Name="Oct24" Type="Int32" />
+    <Property Name="Oct25" Type="Int32" />
+    <Property Name="Oct26" Type="Int32" />
+    <Property Name="Oct27" Type="Int32" />
+    <Property Name="Oct28" Type="Int32" />
+    <Property Name="Oct29" Type="Int32" />
+    <Property Name="Oct30" Type="Int32" />
+    <Property Name="Oct31" Type="Int32" />
+    <Property Name="Nov1" Type="Int32" />
+    <Property Name="Nov2" Type="Int32" />
+    <Property Name="Nov3" Type="Int32" />
+    <Property Name="Nov4" Type="Int32" />
+    <Property Name="Nov5" Type="Int32" />
+    <Property Name="Nov6" Type="Int32" />
+    <Property Name="Nov7" Type="Int32" />
+    <Property Name="Nov8" Type="Int32" />
+    <Property Name="Nov9" Type="Int32" />
+    <Property Name="Nov10" Type="Int32" />
+    <Property Name="Nov11" Type="Int32" />
+    <Property Name="Nov12" Type="Int32" />
+    <Property Name="Nov13" Type="Int32" />
+    <Property Name="Nov14" Type="Int32" />
+    <Property Name="Nov15" Type="Int32" />
+    <Property Name="Nov16" Type="Int32" />
+    <Property Name="Nov17" Type="Int32" />
+    <Property Name="Nov18" Type="Int32" />
+    <Property Name="Nov19" Type="Int32" />
+    <Property Name="Nov20" Type="Int32" />
+    <Property Name="Nov21" Type="Int32" />
+    <Property Name="Nov22" Type="Int32" />
+    <Property Name="Nov23" Type="Int32" />
+    <Property Name="Nov24" Type="Int32" />
+    <Property Name="Nov25" Type="Int32" />
+    <Property Name="Nov26" Type="Int32" />
+    <Property Name="Nov27" Type="Int32" />
+    <Property Name="Nov28" Type="Int32" />
+    <Property Name="Nov29" Type="Int32" />
+    <Property Name="Nov30" Type="Int32" />
+    <Property Name="Dec1" Type="Int32" />
+    <Property Name="Dec2" Type="Int32" />
+    <Property Name="Dec3" Type="Int32" />
+    <Property Name="Dec4" Type="Int32" />
+    <Property Name="Dec5" Type="Int32" />
+    <Property Name="Dec6" Type="Int32" />
+    <Property Name="Dec7" Type="Int32" />
+    <Property Name="Dec8" Type="Int32" />
+    <Property Name="Dec9" Type="Int32" />
+    <Property Name="Dec10" Type="Int32" />
+    <Property Name="Dec11" Type="Int32" />
+    <Property Name="Dec12" Type="Int32" />
+    <Property Name="Dec13" Type="Int32" />
+    <Property Name="Dec14" Type="Int32" />
+    <Property Name="Dec15" Type="Int32" />
+    <Property Name="Dec16" Type="Int32" />
+    <Property Name="Dec17" Type="Int32" />
+    <Property Name="Dec18" Type="Int32" />
+    <Property Name="Dec19" Type="Int32" />
+    <Property Name="Dec20" Type="Int32" />
+    <Property Name="Dec21" Type="Int32" />
+    <Property Name="Dec22" Type="Int32" />
+    <Property Name="Dec23" Type="Int32" />
+    <Property Name="Dec24" Type="Int32" />
+    <Property Name="Dec25" Type="Int32" />
+    <Property Name="Dec26" Type="Int32" />
+    <Property Name="Dec27" Type="Int32" />
+    <Property Name="Dec28" Type="Int32" />
+    <Property Name="Dec29" Type="Int32" />
+    <Property Name="Dec30" Type="Int32" />
+    <Property Name="Dec31" Type="Int32" />
+    <NavigationProperty Name="Groups" Relationship="Self.FK_SemestrOne_Groups" FromRole="SemestrOne" ToRole="Groups" />
+  </EntityType>
+  <EntityType Name="SemestrTwo">
+    <Key>
+      <PropertyRef Name="idVisit" />
+    </Key>
+    <Property Name="idVisit" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idGroup" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Jan1" Type="Int32" />
+    <Property Name="Jan2" Type="Int32" />
+    <Property Name="Jan3" Type="Int32" />
+    <Property Name="Jan4" Type="Int32" />
+    <Property Name="Jan5" Type="Int32" />
+    <Property Name="Jan6" Type="Int32" />
+    <Property Name="Jan7" Type="Int32" />
+    <Property Name="Jan8" Type="Int32" />
+    <Property Name="Jan9" Type="Int32" />
+    <Property Name="Jan10" Type="Int32" />
+    <Property Name="Jan11" Type="Int32" />
+    <Property Name="Jan12" Type="Int32" />
+    <Property Name="Jan13" Type="Int32" />
+    <Property Name="Jan14" Type="Int32" />
+    <Property Name="Jan15" Type="Int32" />
+    <Property Name="Jan16" Type="Int32" />
+    <Property Name="Jan17" Type="Int32" />
+    <Property Name="Jan18" Type="Int32" />
+    <Property Name="Jan19" Type="Int32" />
+    <Property Name="Jan20" Type="Int32" />
+    <Property Name="Jan21" Type="Int32" />
+    <Property Name="Jan22" Type="Int32" />
+    <Property Name="Jan23" Type="Int32" />
+    <Property Name="Jan24" Type="Int32" />
+    <Property Name="Jan25" Type="Int32" />
+    <Property Name="Jan26" Type="Int32" />
+    <Property Name="Jan27" Type="Int32" />
+    <Property Name="Jan28" Type="Int32" />
+    <Property Name="Jan29" Type="Int32" />
+    <Property Name="Jan30" Type="Int32" />
+    <Property Name="Jan31" Type="Int32" />
+    <Property Name="Feb1" Type="Int32" />
+    <Property Name="Feb2" Type="Int32" />
+    <Property Name="Feb3" Type="Int32" />
+    <Property Name="Feb4" Type="Int32" />
+    <Property Name="Feb5" Type="Int32" />
+    <Property Name="Feb6" Type="Int32" />
+    <Property Name="Feb7" Type="Int32" />
+    <Property Name="Feb8" Type="Int32" />
+    <Property Name="Feb9" Type="Int32" />
+    <Property Name="Feb10" Type="Int32" />
+    <Property Name="Feb11" Type="Int32" />
+    <Property Name="Feb12" Type="Int32" />
+    <Property Name="Feb13" Type="Int32" />
+    <Property Name="Feb14" Type="Int32" />
+    <Property Name="Feb15" Type="Int32" />
+    <Property Name="Feb16" Type="Int32" />
+    <Property Name="Feb17" Type="Int32" />
+    <Property Name="Feb18" Type="Int32" />
+    <Property Name="Feb19" Type="Int32" />
+    <Property Name="Feb20" Type="Int32" />
+    <Property Name="Feb22" Type="Int32" />
+    <Property Name="Feb23" Type="Int32" />
+    <Property Name="Feb24" Type="Int32" />
+    <Property Name="Feb25" Type="Int32" />
+    <Property Name="Feb26" Type="Int32" />
+    <Property Name="Feb27" Type="Int32" />
+    <Property Name="Feb28" Type="Int32" />
+    <Property Name="Feb29" Type="Int32" />
+    <Property Name="Mar1" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Mar2" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Mar3" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Mar4" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Mar5" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Mar6" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Mar7" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Mar8" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Mar9" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Mar10" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Mar11" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Mar12" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Mar13" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Mar14" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Mar15" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Mar16" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Mar17" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Mar18" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Mar19" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Mar20" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Mar21" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Mar22" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Mar23" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Mar24" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Mar25" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Mar26" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Mar27" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Mar28" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Mar29" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Mar30" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Mar31" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Apr1" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Apr2" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Apr3" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Apr4" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Apr5" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Apr6" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Apr7" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Apr8" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Apr9" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Apr10" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Apr11" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Apr12" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Apr13" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Apr14" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Apr15" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Apr16" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Apr17" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Apr18" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Apr19" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Apr20" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Apr21" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Apr22" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Apr23" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Apr24" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Apr25" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Apr26" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Apr27" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Apr28" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Apr29" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Apr30" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="May1" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="May2" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="May3" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="May4" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="May5" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="May6" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="May7" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="May8" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="May9" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="May10" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="May11" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="May12" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="May13" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="May14" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="May15" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="May16" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="May17" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="May18" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="May19" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="May20" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="May21" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="May22" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="May23" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="May24" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="May25" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="May26" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="May27" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="May28" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="May29" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="May30" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="May31" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Jun1" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Jun2" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Jun3" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Jun4" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Jun5" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Jun6" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Jun7" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Jun9" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Jun10" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Jun11" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Jun12" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Jun13" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Jun14" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Jun15" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Jun16" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Jun17" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Jun18" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Jun19" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Jun20" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Jun21" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Jun22" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Jun23" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Jun24" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Jun25" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Jun26" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Jun27" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Jun28" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Jun29" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Jun30" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="Groups" Relationship="Self.FK_SemestrTwo_Groups" FromRole="SemestrTwo" ToRole="Groups" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="idUser" />
+    </Key>
+    <Property Name="idUser" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="login" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FIO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="idGroup" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Groups" Relationship="Self.FK_Users_Groups" FromRole="Users" ToRole="Groups" />
+  </EntityType>
+  <Association Name="FK_SemestrOne_Groups">
+    <End Role="Groups" Type="Self.Groups" Multiplicity="1" />
+    <End Role="SemestrOne" Type="Self.SemestrOne" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Groups">
+        <PropertyRef Name="idGroups" />
+      </Principal>
+      <Dependent Role="SemestrOne">
+        <PropertyRef Name="idGroup" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SemestrTwo_Groups">
+    <End Role="Groups" Type="Self.Groups" Multiplicity="1" />
+    <End Role="SemestrTwo" Type="Self.SemestrTwo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Groups">
+        <PropertyRef Name="idGroups" />
+      </Principal>
+      <Dependent Role="SemestrTwo">
+        <PropertyRef Name="idGroup" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_Groups">
+    <End Role="Groups" Type="Self.Groups" Multiplicity="1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Groups">
+        <PropertyRef Name="idGroups" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="idGroup" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="AttendanceEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Groups" EntityType="Self.Groups" />
+    <EntitySet Name="SemestrOne" EntityType="Self.SemestrOne" />
+    <EntitySet Name="SemestrTwo" EntityType="Self.SemestrTwo" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="Users" EntityType="Self.Users" />
+    <AssociationSet Name="FK_SemestrOne_Groups" Association="Self.FK_SemestrOne_Groups">
+      <End Role="Groups" EntitySet="Groups" />
+      <End Role="SemestrOne" EntitySet="SemestrOne" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SemestrTwo_Groups" Association="Self.FK_SemestrTwo_Groups">
+      <End Role="Groups" EntitySet="Groups" />
+      <End Role="SemestrTwo" EntitySet="SemestrTwo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_Groups" Association="Self.FK_Users_Groups">
+      <End Role="Groups" EntitySet="Groups" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(AttendanceModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(AttendanceModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+  </EntityContainer>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+</Schema>
